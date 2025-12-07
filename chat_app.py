@@ -6,7 +6,7 @@ from rsa_logic import generate_keypair, sign_message, verify_signature
 
 def derive_des_key(shared_secret_int):
     """
-    Membuat kunci DES 8 karakter dari shared secret TANPA hashlib.
+    Membuat kunci DES 8 karakter dari shared secret.
     Menggunakan random generator yang di-seed dengan shared secret.
     """
     # Simpan state random saat ini agar tidak mengganggu fungsi lain
